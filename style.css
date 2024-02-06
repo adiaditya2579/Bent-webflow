@@ -1,0 +1,366 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Gilroy-Medium;
+  color: #1E1E21;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+}
+#nav{
+  padding: 2.2rem;
+  gap: 2px;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: end;
+}
+#nav>h4{
+  background-color: black;
+  color: aliceblue;
+  border-radius: 50px;
+  padding: 1rem 1.3rem;
+  font-size: 1.5rem;
+}
+#nav>i{
+  display: none;
+}
+#head{
+  background-color: #F5F3EF;
+  padding: 4.5rem;
+  height: 70%;
+}
+#head>h1{
+  font-size: 8.5rem;
+  font-weight: bold;
+  color: #1E1E21;
+  line-height: 150px;
+}
+#head>h2{
+  font-size: 2.1rem;
+  font-weight: bolder;
+}
+#head-scroll{
+  display: flex;
+  justify-content: end;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+#hero-image{
+  width: 100%;
+  height: 90%;
+  background-image: url(https://assets-global.website-files.com/64589fb989b2b33c593db89d/6458a6db645ec6a527000cfa_home-hero.webp);
+  background-size: cover;
+  background-position: center;
+}
+#about{
+  width: 100%;
+  height: 95%;
+  background-color: #F5F3EF;
+  padding: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.left{
+  width: 53rem;
+  border-right: 2px solid black;
+  padding-right: 2.4rem;
+} 
+.left>p{
+  font-size: 5.5rem;
+  font-weight: 800;
+  line-height: 100%;
+}
+.right{
+  padding-left: 3rem;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.right>h4{
+  font-size: 2rem;
+}
+.icons>i{
+  background-color: #1E1E21;
+  color: #F5F3EF;
+  font-size: 1.5rem;
+  padding: 0.7rem;
+  margin-right: 1rem;
+  border-radius: 50px;
+}
+#page3{
+  width: 100%;
+  height: 100%;
+  background-color: #F5F3EF;
+  padding: 0rem 4rem;
+}
+.work{
+  width: 100%;
+  height: 100%;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 4rem 0rem;
+  display: flex;
+}
+.work-left{
+  height: 100%;
+  width: 35%;
+  padding-right: 5rem;
+  display: flex;
+  justify-content: space-between;
+  border-right: 2px solid black;
+}
+.work-left>h4{
+  font-size: 2rem;
+  font-weight: 900;
+}
+.work-left>i{
+  font-size: 2rem;
+}
+.work-right{
+  padding-left: 4rem;
+  height: 95%;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.work-up{
+  padding-bottom: 4rem;
+  display: flex;
+  border-bottom: 2px solid black;
+}
+.work-down{
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+.work-up .box:nth-child(odd),.work-down .box:nth-child(odd){
+  padding-right: 3rem;
+  border-right: 2px solid black;
+}
+.work-up .box:nth-child(even),.work-down .box:nth-child(even){
+  padding-left: 3rem;
+}
+.box{
+  height: 100%;
+  width: 100%;
+}
+.box>h2{
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.box>p{
+  font-size: 1.2rem;
+  opacity: 70%;
+  line-height: 2rem;
+}
+#work-banner{
+  width: 100%;
+  height: 33%;
+  background-color: #F5F3EF;
+  font-size: 12rem;
+  font-weight: bolder;
+}
+#work-img-1{
+  height: 100%;
+  width: 100%;
+  background-image: url(https://assets-global.website-files.com/64589fb989b2b3e8783db8c8/645cad0d8364135d4087b9c8_project-01.webp);
+  background-position: center;
+  background-size: cover;
+  
+}
+.arrow{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.arrow>i{
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50% -50%);
+  background-color: #1E1E21;
+  padding: 2rem;
+  border-radius: 50%;
+  color: #F5F3EF;
+  font-size: 1.5rem;
+}
+
+#camera-section{
+  height: 35%;
+  width: 100%;
+  background-color: #F5F3EF;
+  padding: 2.5rem 0rem;
+  display: flex;
+}
+.camera-section{
+  height: 35%;
+  width: 100%;
+  background-color: #F5F3EF;
+  padding: 2.5rem 0rem;
+  display: flex;
+}
+.cam-left{
+  width: 50%;
+}
+.cam-left>h1{
+  padding-left: 4rem;
+  font-size: 9rem;
+}
+.cam-right{
+  padding-left: 7rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cam-right>p{
+  opacity: 70%;
+  width: 85%;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+}
+.btn{
+  background-color: #1E1E21;
+  color: #F5F3EF;
+  padding: 0.7rem 1.2rem;
+  border-radius: 50px;
+  border: none;
+}
+#work-img-2{
+  height: 100%;
+  width: 100%;
+  background-image: url(https://assets-global.website-files.com/64589fb989b2b3e8783db8c8/645cad129d3885d86c115c7f_project-02.webp);
+  background-position: center;
+  background-size: cover;
+}
+#footer-top{
+  height: 65%;
+  width: 100%;
+  background-color: #1E1E21;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#footer-top>h3{
+  color: #F5F3EF;
+  font-size: 2rem;
+  padding-top: 10%;
+}
+#footer-top>h1{
+  color: #F5F3EF;
+  font-size: 8.5rem;
+}
+.btn-1{
+  background-color: #F5F3EF;
+  color: #1E1E21;
+  font-size: 1.2rem;
+  padding: 0.8rem 1.7rem;
+  border-radius: 50px;
+  border: none;
+  margin-top: 2%;
+} 
+#footer-bottom{
+  height: 82%;
+  width: 100%;
+  background-color: #1E1E21;
+  display: flex;
+}
+.container{
+  height: 80%;
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10rem;
+  padding-left: 3rem;
+}
+.container>a{
+  text-decoration: none;
+  color: #F5F3EF;
+  font-size: 1.2rem;
+  line-height: 2.7rem;
+  
+  
+}
+
+
+
+@media(max-width:700px){
+  #menu{
+    display: none;
+  }
+  #nav{
+    padding: 1rem;
+  }
+  #nav>h4{
+    background-color: black;
+    color: aliceblue;
+    border-radius: 50px;
+
+    font-size: 1.2rem;
+  }
+  #nav>i{
+    background-color: black;
+    color: #F5F3EF;
+    border-radius: 50px;
+    padding: 1rem 1.1rem;
+    font-size: 1.5rem;
+    display: inline-block;
+}
+  #head{
+    padding: 2.1rem;
+  }
+  #head>h1{
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #1E1E21;
+    line-height: 62px;
+  }
+  #hero-image{
+    height: 40%;
+    background-size: cover;
+    background-position: center;
+  }
+  #about{
+    width: 100%;
+    height: 85%;
+    padding: 1rem;
+  }
+  .left{
+    width: 100%;
+    border-right: none;
+    padding-right: 0rem;
+  }
+  .left>p{
+    width: 100%;
+    padding: 1.1rem;
+    font-size: 2.8rem;
+    font-weight: bolder;
+    line-height: 100%;
+  }
+  .right {
+    order: -1;
+    padding-left: 1rem;
+    padding-top: 2rem;
+    height: 20%;
+  }
+  
+  .right>h4{
+    font-size: 1.75rem;
+    font-weight: bold;
+  }
+  .icons{
+    margin-top: 1.2rem;
+    margin-bottom: 1.8rem;
+  }
+  .icons>i{
+    margin-right: 0.5rem;
+    width: 100%;
+    padding: 0.7rem;
+    
+  }
+}
