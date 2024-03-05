@@ -8,116 +8,164 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-  <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
 </head>
-<body>
-  
-  <div id="nav">
-    <h4>0</h4>
-    <h4 id="menu">Menu</h4>
-    <i class="ri-menu-line"></i>
+<style>
+  @media only screen and (min-width: 600px){
+
+    .text-size-9rem{
+      font-size: 9rem;
+    }
     
+  }
+  body{
+    background-color: #F5F3EF;
+  }
+</style>
+
+
+<body class=" bg-[#169EFF]">
+  
+  <div class="mt-7 mx-6 flex gap-3 right-0 fixed md:m-10 ">
+      <h4 class=" px-4 py-3 bg-black text-white rounded-full font-bold text-xl">0</h4>
+      <i class="ri-menu-line px-4 py-3 bg-black text-white rounded-full font-bold text-xl hidden md:block"></i> 
+      <h1 class="px-4 py-3 bg-black text-white rounded-full font-bold text-xl hidden sm:block">Menu</h1> 
   </div>
   
-  <div id="head">
+  <div class="ml-4 pt-10 font-medium text-7xl leading-11 text-[#1E1E21] text-size-9rem  md:font-semibold ">
     <h1>Bent Lindberg </h1>
     <h1>Digital Designer</h1>
-    <h2>(Berlin, Germany)</h2>
-    <div id="head-scroll">
+  </div>
+  <div class="m-5 text-2xl font-bold opacity-90  flex justify-between">
+    <div>
+      <h2>(Berlin, Germany)</h2>
+    </div>
+    <div class="hidden sm:block">
       <i class="ri-arrow-right-down-line"></i>
       Scroll down
     </div>
   </div>
 
+  <div class="">
+    <img src="https://assets-global.website-files.com/64589fb989b2b33c593db89d/6458a6db645ec6a527000cfa_home-hero.webp" alt="">
+  </div>
 
-  <div id="hero-image"></div>
 
 
-  <div id="about">
-    <div class="left">
-      <p>As a digital designer, I focus on producing top-notch and impactful digital experiences.</p>
-    </div>
-    <div class="right">
-      <h4>(About Me)</h4>
-      <div class="icons">
-        <i class="ri-instagram-line"></i>
-        <i class="ri-twitter-x-line"></i>
-        <i class="ri-youtube-line"></i>
-      
+
+<div class="sm:my-8 m-5 md:flex md:flex-row-reverse">
+  <div class=" md:flex md:flex-col md:justify-between md:w-4/5 md:pl-12 md:pr-60">
+    <h4 class="text-2xl font-bold my-5 md:my-0">(About Me)</h4>
+      <div class="flex gap-4 my-6 md:my-0">
+        <i class="ri-instagram-line px-3 py-2 bg-black text-white font-medium text-2xl rounded-full"></i>
+        <i class="ri-twitter-x-line px-3 py-2 bg-black text-white font-medium text-2xl rounded-full"></i>
+        <i class="ri-youtube-line px-3 py-2 bg-black text-white font-medium text-2xl rounded-full"></i>
+      </div>
+  </div>
+  <div class="text-5xl font-semibold  md:font-bold md:text-8xl md:border-r-2 md:border-black md:pr-16">
+    <p>As a digital designer, I focus on producing top-notch and impactful digital experiences.</p>
+  </div>
+</div>
+<div class="m-5 border-b-2 border-black"></div>
+
+
+
+
+<div class="md:flex">
+  <div class=" m-5  text-2xl font-bold flex justify-between md:w-2/3 md:pr-8">
+    <h4>(What I do)</h4>
+    <i class="ri-arrow-right-down-line"></i>
+  </div> 
+
+
+
+  <div class=" md:border-l-2 border-black">
+    <div class="md:flex">
+      <div class="md:pl-8 md:w-4/6">
+        <h2 class="m-5 my-5 text-3xl font-bold">Digital Design</h2>
+        <p class="m-4 text-lg font-medium opacity-70 leading-relaxed">I create stunning digital designs that engage and inspire your audience. Let me bring your brand to life with my skills.</p>
+      </div>
+      <div class="m-4 my-8 border-b-2 border-black"></div>
+    
+      <div class="md:border-l-2 border-black md:pl-8  md:w-4/6">
+        <h2 class=" m-4 mt-8 text-3xl font-bold">Art Direction</h2>
+        <p class=" m-4 my-6 text-lg font-medium opacity-70 leading-relaxed">My art direction expertise ensures that your project is on brand, on message, and visually stunning. Let's tell your story together.</p>
       </div>
     </div>
-  </div>
 
 
+    <div class="m-5 my-5 border-b-2 border-black md:object-none"></div>
+  
 
-  <div id="page3">
-    <div class="work">
-      <div class="work-left">
-        <h4>(What I do)</h4>
-        <i class="ri-arrow-right-down-line"></i>
+    <div class="md:flex">
+      <div class="md:pl-8 md:w-4/6 my-5">
+        <h2 class=" m-4 text-3xl font-bold">Interaction Design</h2>
+        <p class=" m-4 text-lg font-medium opacity-70 leading-relaxed">I specialize in designing intuitive user experiences that are both functional and beautiful.</p>
       </div>
-      <div class="work-right">
-        <div class="work-up">
-          <div class="box">
-            <h2>Digital Design</h2>
-            <p>I create stunning digital designs that engage and inspire your audience. Let me bring your brand to life with my skills.</p>
-          </div>
-          <div class="box">
-            <h2>Art Direction</h2>
-            <p>My art direction expertise ensures that your project is on brand, on message, and visually stunning. Let's tell your story together.</p>
-          </div>
-        </div>
-        <div class="work-down">
-          <div class="box">
-            <h2>Interaction Design</h2>
-            <p>I specialize in designing intuitive user experiences that are both functional and beautiful.</p>
-          </div>
-          <div class="box">
-            <h2>Motion Design</h2>
-            <p>From animated logos to explainer videos, I bring your message to life with visually stunning motion design.</p>
-          </div>
-        </div>
+      <div class=" m-4 my-8 border-b-2 border-black"></div>
+    
+      <div class="md:border-l-2 border-black md:pl-8 md:w-4/6 my-5">
+        <h2 class="m-4 text-3xl font-bold">Motion Design</h2>
+        <p class=" m-4 text-lg font-medium opacity-70 leading-relaxed">From animated logos to explainer videos, I bring your message to life with visually stunning motion design.</p>
       </div>
-    </div>
-  </div>
-
-  <div id="work-banner">
-    ork work work w
-  </div>
-
-  <div id="work-img-1">
-    <div class="arrow"><i class="ri-arrow-right-up-line"></i></div>
-  </div>
-  <div id="camera-section">
-    <div class="cam-left">
-      <h1>Camera</h1>
-    </div>
-    <div class="cam-right">
-      <p>A cutting-edge digital platform designed to revolutionize the way people interact with technology.</p>
-      <div class="btn-1">
-        <button class="btn">Digital Design</button>
-        <button class="btn">2023</button>
-      </div>
-    </div>
-  </div>
 
 
-  <div id="work-img-2">
-    <div class="arrow"><i class="ri-arrow-right-up-line"></i></div>
-  </div>
-  <div class="camera-section">
-    <div class="cam-left">
-      <h1>Noise</h1>
-    </div>
-    <div class="cam-right">
-      <p>A cutting-edge digital platform designed to revolutionize the way people interact with technology.</p>
-      <div class="btn-2">
-        <button class="btn">Digital Design</button>
-        <button class="btn">2023</button>
-      </div>
-    </div>
-  </div>
 
+    </div>
+  </div>
+</div>
+<div class=" m-4 my-8 border-b-2 border-black"></div>
+
+
+
+
+<!-- <div>
+  <div><i class="ri-arrow-right-up-line"></i></div>
+</div> -->
+
+<div>
+  <img src="https://assets-global.website-files.com/64589fb989b2b3e8783db8c8/645cad0d8364135d4087b9c8_project-01.webp" alt="">
+</div>
+
+
+<div class="m-5 md:flex md:justify-between ">
+  <div class="font-bold text-6xl my-3 md:font-extrabold text-size-9rem"  >
+    <h1>Camera</h1>
+  </div>
+  <div class=" md:w-2/6">
+    <p class=" text-lg font-medium opacity-70 leading-relaxed my-6">A cutting-edge digital platform designed to revolutionize the way people interact with technology.</p>
+    <div class="md:flex md:gap-3">
+      <button class=" bg-black py-1 px-3 text-white rounded-full">Digital Design</button>
+      <button class=" bg-black py-1 px-3 text-white rounded-full">2023</button>
+    </div>
+  </div>
+</div>
+
+
+<div>
+  <img src="https://assets-global.website-files.com/64589fb989b2b3e8783db8c8/645cad129d3885d86c115c7f_project-02.webp" alt="">
+</div>
+
+
+<div class="m-5 md:flex md:justify-between ">
+  <div class="font-bold text-6xl my-3 md:font-extrabold text-size-9rem"  >
+    <h1>Noise</h1>
+  </div>
+  <div class=" md:w-2/6">
+    <p class=" text-lg font-medium opacity-70 leading-relaxed my-6">A cutting-edge digital platform designed to revolutionize the way people interact with technology</p>
+    <div class="md:flex md:gap-3">
+      <button class=" bg-black py-1 px-3 text-white rounded-full">Digital Design</button>
+      <button class=" bg-black py-1 px-3 text-white rounded-full">2023</button>
+    </div>
+  </div>
+</div>
+
+<div>
+  <img src="https://assets-global.website-files.com/64589fb989b2b3e8783db8c8/645cad1988b7ca338942d0b3_project-03.webp" alt="">
+</div>
+
+<!-- 
   <div id="footer-top">
     <h3>(Connect)</h3>
     <h1>Let's talk</h1>
@@ -149,6 +197,6 @@
       <a href="">Licensing</a>
       <a href="">Changelog</a>
     </div>
-  </div>
+  </div> -->
 </body>
 </html>
